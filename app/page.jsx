@@ -25,7 +25,7 @@ export default async function Page() {
   return (
     <main className="bg-black">
       <Container className="grid grid-cols-2 gap-1 py-5 md:grid-cols-3 lg:grid-cols-4">
-        {data.characters.map(item => {
+        {data?.characters?.map(item => {
           return (
             <Link
               href={`/characters/${item.slug}`}
